@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+        
+    <ion-card class="i">
+      <ion-card-header>
+        <ion-icon style="width:300px;height:50px;" name="person-circle-outline"></ion-icon>
+      </ion-card-header>
+
+      <!-- inputs  -->
+      <ion-item>
+        <ion-label position="">
+          
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-label>
+        <ion-input [(ngModel)]="user" clearInput value=""></ion-input>
+      </ion-item>
+
+      <ion-item style="top:20%;">
+        <ion-label position="">
+          
+          <ion-icon name="key-outline"></ion-icon>
+        </ion-label>
+        <ion-input [(ngModel)]="pass" type="password" clearInput value=""></ion-input>
+      </ion-item> 
+
+
+         
+      <!-- inputs  -->
+      
+      <ion-card-content content-center style="top:30%;left:10%;width: 100%;">
+        <ion-card-title>
+          
+          <ion-button (click)="inicioSeccion()">
+            <ion-icon name="log-in-outline"></ion-icon>
+          </ion-button>
+         
+        </ion-card-title>
+      </ion-card-content>
+
+
+ 
+
+
+<!-- 5  boton con funcion  cambiarPass() -->
+    </ion-card>
+    <ion-button (click)="cambiarPass()"  >
+       cambiar clave
+    </ion-button>
+</ion-content>

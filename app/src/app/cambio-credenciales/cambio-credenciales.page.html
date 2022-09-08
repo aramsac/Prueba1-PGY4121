@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cambio de contraseña</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="height:50%;background:red">
+
+   <!-- inputs  -->
+   <ion-item>
+    <ion-label position="floating">
+      Nombre de Usuario <ion-icon name="person-outline"></ion-icon>
+    </ion-label>
+    <ion-input [(ngModel)]="user" clearInput value=""></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">
+      Nueva contraseña <ion-icon name="key-outline"></ion-icon>
+    </ion-label>
+    <ion-input [(ngModel)]="nuevaPass" type="password" clearInput value=""></ion-input>
+  </ion-item> 
+
+  <!--
+  <ion-item>
+    <ion-label position="floating">
+      confirmar contraseña <ion-icon name="key-outline"></ion-icon>
+    </ion-label>
+    <ion-input [(ngModel)]="nuevaPassConfirmar" type="password" clearInput value=""></ion-input>
+  </ion-item> 
+-->
+ 
+    <ion-button (click)="cambiarClave()">
+      Guardar contraseña
+    </ion-button>
+
+
+</ion-content>
